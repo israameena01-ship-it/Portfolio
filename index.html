@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#193b57;
+    color:#e9f5f4;
+}
+
+header{
+    background:#042838;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+header nav a:hover{
+    color:#ffffff;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#042838,#2e5474);
+    color:white;
+    padding:0 10%;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    max-width:1200px;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:15px 0;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:white;
+    color:#2193b0;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#f4f7f8d7;
+}
+
+.about p{
+    text-align:center;
+    line-height:1.8;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgb(100,126,150);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#154e5ccb;
+    color:rgb(207,215,228);
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+header nav{
+    margin-top:15px;
+}
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero-image img{
+    width:240px;
+    height:240px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Isra Ameena K M</h2>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-text">
+<h1>Hello, I'm Isra Ameena K M</h1>
+<p>Web Developer | Programmer</p>
+<a href="#projects" class="btn">View My Work</a>
+</div>
+
+<div class="hero-image">
+<img src="isra image.jpeg" alt="Isra Ameena K M">
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<p>
+I am Isra Ameena K M,  an Integrated M.Sc. Computer Science student specializing in Artificial Intelligence and Machine Learning, with a strong foundation in software development and data-driven technologies. I am proficient in programming languages including Python, C, and C++, and have hands-on experience working with SQL databases. Additionally, I have completed a certification in Power BI, enabling me to analyze data and create insightful visualizations.
+
+Beyond my technical expertise, I possess strong leadership, coordination, organizational, and public speaking skills, which allow me to collaborate effectively in team environments and contribute to successful project execution. I am passionate about continuous learning and eager to apply my knowledge to develop innovative and impactful technology solutions.
+</p>
+
+</section>
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="projects">
+
+
+<div class="card">
+<h3 class="underline">Beyond The Game Website</h3>
+<p>Designed and developed a website to support athletes who are recovering from serious injuries. The main idea of the project is to help them explore new career options and opportunities beyond sports, so they can plan their future in a different direction if needed.
+
+This project was created as part of the TinkerHub Campus Technology Community, where I worked with a team to come up with ideas and build the application together. Through this experience, I learned how to collaborate with others, share ideas, and turn a problem into a useful solution</p>
+</div>
+
+<div class="card">
+<h3>Flipkart Sales Dashboard</h3>
+<img src="flipkart.jpeg"
+         alt="Flipkart Sales Dashboard"
+         style="width:100%; height:220px; object-fit:cover; border-radius:8px; margin-bottom:15px;">
+
+<p>Developed an interactive Power BI dashboard to analyze and visualize Flipkart sales data. The dashboard helps users understand sales performance by displaying key insights such as total sales, monthly sales trends, product category performance, customer ratings, and order details. It includes interactive charts and filters, making it easy to explore the data and identify patterns. Through this project, I gained hands-on experience in data cleaning, data visualization, dashboard design, and using Power BI to turn raw data into meaningful business insights that support better decision-making.</p>
+</div>
+
+<div class="card"> 
+    <!--HR Data Analysis dashboard Image--> 
+    <h3>HR Data Analysis Dashboard</h3> 
+      <img src="hr data.jpeg"
+         alt="HR Data Analysis Dashboard"
+         style="width:100%; height:220px; object-fit:cover; border-radius:8px; margin-bottom:15px;">
+
+    <p> Created an HR Data Analysis Dashboard using Power BI to study employee data in an easy way. The dashboard shows important details like total number of employees, department-wise distribution, salary trends, gender ratio, and average salary using simple charts.
+
+It helps to quickly understand how employees are spread across departments and how salaries vary in the company. This makes it easier for HR teams to view data clearly and take better decisions based on it. Through this project, I learned how to turn raw data into useful visuals using Power BI. </p>
+  
+    </div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Python</div>
+<div class="skill">C++</div>
+<div class="skill">C</div>
+<div class="skill">SQL</div>
+<div class="skill">Power BI</div>
+</div>
+
+</section>
+
+<section id="activities">
+
+<h2>Extracurricular Activities</h2>
+
+<div class="skills">
+<div class="skill">Public Speaking</div>
+<div class="skill">Arts</div>
+<div class="skill">Sports</div>
+<div class="skill">Leadership</div>
+<div class="skill">Team Coordination</div>
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: israameena01@email.com</p>
+<p>Phone: +91 6238062179</p>
+<p>Location: Kerala, India</p>
+
+</section>
+
+<footer>
+<p>© 2026 Isra Ameena K M | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
